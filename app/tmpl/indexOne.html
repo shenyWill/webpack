@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title><%= htmlWebpackPlugin.options.title %></title>
+	</head>
+	<body>
+		<%= htmlWebpackPlugin.options.data %>
+		<hr />
+		<br />
+		<% for(var i in htmlWebpackPlugin.files) { %>
+			<%= i %> : <%= JSON.stringify(htmlWebpackPlugin.files[i]) %>
+		<% } %>
+		<hr />
+		<br />
+		<% for(var i in htmlWebpackPlugin.options) { %>
+			<%= i %> : <%= JSON.stringify(htmlWebpackPlugin.files[i]) %>
+		<% } %>
+	</body>
+</html>

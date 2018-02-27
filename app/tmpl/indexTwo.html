@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>this is template</title>
+	</head>
+	<body>
+		<% for(var i in htmlWebpackPlugin.files.chunks) { %>
+			<!--<script src="<%= htmlWebpackPlugin.files.chunks[i].entry %>" type="text/javascript" charset="utf-8"></script>-->
+			<!--<%= JSON.stringify(htmlWebpackPlugin.files.chunks[i].entry) %>-->
+		<% } %>
+	</body>
+</html>

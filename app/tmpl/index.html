@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title><%= htmlWebpackPlugin.options.title %></title>
+		<script src="<%= htmlWebpackPlugin.files.chunks.helloWorld.entry %>" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<script src="<%= htmlWebpackPlugin.files.chunks.two.entry %>" type="text/javascript" charset="utf-8"></script>
+		
+	</body>
+</html>
